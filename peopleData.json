@@ -16,7 +16,6 @@
       }
     ]
   },
-
   "leia": {
     "name": "Princess Leia",
     "photos": [
@@ -31,10 +30,21 @@
       {
         "caption": "Classic Leia.",
         "url": "https://www.girlgeekupnorth.co.uk/wp-content/uploads/2016/12/Princess-Leia-1.jpg"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=4",
+        "caption": "Leia as a kitty #4"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=5",
+        "caption": "Leia as a kitty #5"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=6",
+        "caption": "Leia as a kitty #6"
       }
     ]
   },
-
   "rey": {
     "name": "Rey",
     "photos": [
@@ -52,7 +62,6 @@
       }
     ]
   },
-
   "finn": {
     "name": "Finn",
     "photos": [
@@ -70,7 +79,6 @@
       }
     ]
   },
-
   "r2d2": {
     "name": "R2-D2",
     "photos": [
