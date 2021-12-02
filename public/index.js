@@ -21,13 +21,32 @@ function handleModalAcceptClick() {
     alert("You must fill in all of the fields!");
   } else {
 
-    var photoCardTemplate = Handlebars.templates.photoCard;
-    var newPhotoCardHTML = photoCardTemplate({
+    var req = new XMLHttpRequest()
+    // http://localhost:8000/people/rey
+    var url = '/people/' + getPersonIdFromURL() + '/addPhoto'
+    console.log("== url:", url)
+    req.open('POST', url)
+
+    var photoObj = {
       url: photoURL,
       caption: caption
-    });
-    var photoCardContainer = document.querySelector('.photo-card-container');
-    photoCardContainer.insertAdjacentHTML('beforeend', newPhotoCardHTML);
+    }
+    var reqBody = JSON.stringify(photoObj)
+    console.log("== reqBody:", reqBody)
+
+    req.addEventListener('load', function (event) {
+      if (event.target.status === 200) {
+        var photoCardTemplate = Handlebars.templates.photoCard;
+        var newPhotoCardHTML = photoCardTemplate(photoObj);
+        var photoCardContainer = document.querySelector('.photo-card-container');
+        photoCardContainer.insertAdjacentHTML('beforeend', newPhotoCardHTML);
+      } else {
+        alert("Error saving photo: " + event.target.response)
+      }
+    })
+
+    req.setRequestHeader('Content-Type', 'application/json')
+    req.send(reqBody)
 
     hideModal();
 

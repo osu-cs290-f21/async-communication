@@ -59,8 +59,29 @@
       {
         "caption": "Angry/surprised Rey.",
         "url": "https://www.nixon.com/on/demandware.static/-/Library-Sites-Nixon/default/dw95875405/category-landing/star-wars/rey/REY-CHARACTER-LANDING-5050-632x632.jpg"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=6",
+        "caption": "Rey as a kitty"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=2",
+        "caption": "Rey as a kitty #2"
+      },
+      {
+        "url": "https://placekitten.com/480/480",
+        "caption": "Client-side kitty"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=9",
+        "caption": "Client-side kitty #2"
+      },
+      {
+        "url": "https://placekitten.com/480/480?image=10",
+        "caption": "Client-side kitty #3"
       }
-    ]
+    ],
+    "_locals": {}
   },
   "finn": {
     "name": "Finn",
